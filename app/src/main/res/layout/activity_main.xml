@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Conta de Restaurante"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Campo para o valor da conta -->
+    <TextView
+        android:id="@+id/textView_billAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor da conta (R$):" />
+
+    <!-- Campo para o couvert artístico -->
+    <EditText
+        android:id="@+id/edtConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor total da conta"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView_couvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Couvert artístico (R$):" />
+
+    <EditText
+        android:id="@+id/edtCover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Digite o valor do couvert artístico" />
+
+    <!-- Campo para a taxa de serviço -->
+    <TextView
+        android:id="@+id/textView_serviceTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taxa de serviço (%):" />
+
+    <EditText
+        android:id="@+id/edtTaxa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Digite o valor da taxa de serviço (em %)" />
+
+    <!-- Campo para o número de pessoas -->
+    <TextView
+        android:id="@+id/textView_peopleCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de pessoas:" />
+
+    <EditText
+        android:id="@+id/edtPessoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Digite o número de pessoas para dividir a conta" />
+
+    <!-- Botão para calcular -->
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_gravity="center"
+        android:paddingTop="16dp" />
+
+    <!-- Resultado: Total da conta -->
+    <TextView
+        android:id="@+id/textView_totalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total da conta (com taxas):"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0,00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Resultado: Total por pessoa -->
+    <TextView
+        android:id="@+id/textView_perPersonResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total por pessoa:"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtPorpessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0,00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
